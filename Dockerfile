@@ -1,3 +1,3 @@
 FROM node:16-alpine3.14
-RUN echo "console.log('nothing');" > main.js
-CMD ["node", "main.js"]
+ADD main.js /main.js
+CMD ["node", "/main.js"]
